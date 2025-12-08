@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#27ae60;
+    color: #333;
+  }
+  
+  .app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #27ae60;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+  }
+  
+  /* Upload Section */
+  .upload-section {
+    height: 40vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dropzone {
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    border: 3px dashed #e67e22;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .dropzone.active {
+    border-color: #27ae60;
+  }
+  
+  .dropzone p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    max-width: 600px;
+    height: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #27ae60;
+    transition: width 0.3s ease;
+  }
+  
+  /* Input Section */
+  .input-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: large;
+  }
+
+  .input-section-layout{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+  }
+
+  .btn-div{
+        display: flex;
+        justify-content: center;
+        
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .results p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .input-section button {
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-section button:hover {
+    background-color: #d35400;
+  }
+  
+  /* Report Section */
+  .report-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .report-section h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  /* .report-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+   */
+
+   .report-grid table,th,td{
+    border:1px solid black;
+    padding: 10px;
+   }
+
+  #report-table{
+    border: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  .report-card {
+    padding: 15px;
+    border: 1px solid #ecf0f1;
+    border-radius: 10px;
+    background-color: #fafafa;
+  }
+  
+  .report-image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .report-card p {
+    margin: 5px 0;
+  }
+  
+  /* Education Section */
+  .education-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-section h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .education-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .education-section p {
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #ecf0f1;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
